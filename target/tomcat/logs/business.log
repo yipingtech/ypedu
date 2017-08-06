@@ -1,0 +1,593 @@
+2017-08-06 16:34:50.573 WARN  n.s.e.config.ConfigurationFactory - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/personal/java/soft/maven-repository/net/sf/ehcache/ehcache/2.10.1/ehcache-2.10.1.jar!/ehcache-failsafe.xml
+2017-08-06 16:34:51.097 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2017-08-06 16:34:51.119 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-08-06 16:34:51.120 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2017-08-06 16:34:51.122 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2017-08-06 16:34:51.148 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-08-06 16:34:51.149 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-08-06 16:34:51.149 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2017-08-06 16:34:51.151 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7782dbe7
+2017-08-06 16:34:51.165 INFO  org.quartz.core.QuartzScheduler - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2017-08-06 16:35:00.098 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:35:00.132 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:35:00.045(Timestamp)
+2017-08-06 16:35:00.158 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:35:00.161 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:35:00.162 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:35:00.16(Timestamp)
+2017-08-06 16:35:00.163 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:36:00.018 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:36:00.025 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:36:00.014(Timestamp)
+2017-08-06 16:36:00.031 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:36:00.033 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:36:00.036 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:36:00.032(Timestamp)
+2017-08-06 16:36:00.039 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:37:00.003 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:37:00.004 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:37:00.001(Timestamp)
+2017-08-06 16:37:00.006 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:37:00.006 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:37:00.007 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:37:00.006(Timestamp)
+2017-08-06 16:37:00.009 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:37:01.797 WARN  n.s.e.config.ConfigurationFactory - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/personal/java/soft/maven-repository/net/sf/ehcache/ehcache/2.10.1/ehcache-2.10.1.jar!/ehcache-failsafe.xml
+2017-08-06 16:37:01.967 WARN  net.sf.ehcache.DiskStorePathManager - diskStorePath 'C:\Users\33131\AppData\Local\Temp' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to C:\Users\33131\AppData\Local\Temp\ehcache_auto_created2472749019082621951diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2017-08-06 16:37:02.327 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2017-08-06 16:37:02.343 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-08-06 16:37:02.343 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2017-08-06 16:37:02.344 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2017-08-06 16:37:02.345 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-08-06 16:37:02.345 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-08-06 16:37:02.346 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2017-08-06 16:37:02.347 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@12a8bd84
+2017-08-06 16:37:02.356 INFO  org.quartz.core.QuartzScheduler - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2017-08-06 16:38:00.008 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:38:00.014 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:38:00.005(Timestamp)
+2017-08-06 16:38:00.019 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:38:00.020 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:38:00.022 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:38:00.02(Timestamp)
+2017-08-06 16:38:00.024 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:38:00.102 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:38:00.138 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:38:00.049(Timestamp)
+2017-08-06 16:38:00.162 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:38:00.168 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:38:00.169 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:38:00.167(Timestamp)
+2017-08-06 16:38:00.171 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:39:00.014 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:39:00.016 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:39:00.018 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:39:00.007(Timestamp)
+2017-08-06 16:39:00.019 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:39:00.013(Timestamp)
+2017-08-06 16:39:00.020 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:39:00.021 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:39:00.021 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:39:00.022 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:39:00.023 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:39:00.021(Timestamp)
+2017-08-06 16:39:00.024 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:39:00.022(Timestamp)
+2017-08-06 16:39:00.024 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:39:00.025 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:40:00.003 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:40:00.005 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:40:00.005 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:40:00.002(Timestamp)
+2017-08-06 16:40:00.007 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:40:00.002(Timestamp)
+2017-08-06 16:40:00.007 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:40:00.009 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:40:00.009 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:40:00.010 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:40:00.008(Timestamp)
+2017-08-06 16:40:00.010 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:40:00.012 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:40:00.01(Timestamp)
+2017-08-06 16:40:00.013 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:40:00.014 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:41:00.705 WARN  n.s.e.config.ConfigurationFactory - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/personal/java/soft/maven-repository/net/sf/ehcache/ehcache/2.10.1/ehcache-2.10.1.jar!/ehcache-failsafe.xml
+2017-08-06 16:41:01.715 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2017-08-06 16:41:01.740 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-08-06 16:41:01.741 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2017-08-06 16:41:01.743 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2017-08-06 16:41:01.745 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-08-06 16:41:01.745 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-08-06 16:41:01.745 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2017-08-06 16:41:01.748 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@33b13e71
+2017-08-06 16:41:01.765 INFO  org.quartz.core.QuartzScheduler - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2017-08-06 16:42:00.103 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:42:00.135 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:42:00.048(Timestamp)
+2017-08-06 16:42:00.156 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:42:00.160 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:42:00.161 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:42:00.159(Timestamp)
+2017-08-06 16:42:00.163 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:43:00.003 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:43:00.005 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:43:00.002(Timestamp)
+2017-08-06 16:43:00.007 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:43:00.008 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:43:00.008 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:43:00.007(Timestamp)
+2017-08-06 16:43:00.009 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:44:00.006 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:44:00.011 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:44:00.002(Timestamp)
+2017-08-06 16:44:00.014 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:44:00.015 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:44:00.016 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:44:00.015(Timestamp)
+2017-08-06 16:44:00.018 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:45:00.002 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:45:00.003 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:45:00.001(Timestamp)
+2017-08-06 16:45:00.005 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:45:00.006 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:45:00.006 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:45:00.005(Timestamp)
+2017-08-06 16:45:00.008 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:45:25.982 WARN  n.s.e.config.ConfigurationFactory - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/personal/java/soft/maven-repository/net/sf/ehcache/ehcache/2.10.1/ehcache-2.10.1.jar!/ehcache-failsafe.xml
+2017-08-06 16:45:26.256 WARN  net.sf.ehcache.DiskStorePathManager - diskStorePath 'C:\Users\33131\AppData\Local\Temp' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to C:\Users\33131\AppData\Local\Temp\ehcache_auto_created3129699934579987295diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2017-08-06 16:45:26.674 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2017-08-06 16:45:26.693 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-08-06 16:45:26.694 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2017-08-06 16:45:26.695 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2017-08-06 16:45:26.696 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-08-06 16:45:26.697 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-08-06 16:45:26.697 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2017-08-06 16:45:26.698 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@23171b9d
+2017-08-06 16:45:26.707 INFO  org.quartz.core.QuartzScheduler - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2017-08-06 16:45:59.012 DEBUG d.W.queryImagesByType - ==>  Preparing: SELECT EDU_WEBSITE_IMAGES.IMAGE_ID, EDU_WEBSITE_IMAGES.IMAGE_URL, EDU_WEBSITE_IMAGES.LINK_ADDRESS, EDU_WEBSITE_IMAGES.TITLE, EDU_WEBSITE_IMAGES.TYPE_ID, EDU_WEBSITE_IMAGES.SERIES_NUMBER, EDU_WEBSITE_IMAGES.PREVIEW_URL, EDU_WEBSITE_IMAGES.COLOR, EDU_WEBSITE_IMAGES.DESCRIBE FROM EDU_WEBSITE_IMAGES ORDER BY TYPE_ID 
+2017-08-06 16:45:59.013 DEBUG d.W.queryImagesByType - ==> Parameters: 
+2017-08-06 16:45:59.018 DEBUG d.W.queryImagesByType - <==      Total: 9
+2017-08-06 16:45:59.024 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:45:59.025 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: web(String)
+2017-08-06 16:45:59.033 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:45:59.045 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:45:59.046 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: logo(String)
+2017-08-06 16:45:59.047 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:45:59.048 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:45:59.048 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: censusCode(String)
+2017-08-06 16:45:59.050 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:45:59.051 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:45:59.052 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: online(String)
+2017-08-06 16:45:59.053 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:45:59.054 DEBUG d.W.getWebNavigate - ==>  Preparing: SELECT EDU_WEBSITE_NAVIGATE.ID, EDU_WEBSITE_NAVIGATE.NAME, EDU_WEBSITE_NAVIGATE.URL, EDU_WEBSITE_NAVIGATE.NEWPAGE, EDU_WEBSITE_NAVIGATE.TYPE, EDU_WEBSITE_NAVIGATE.ORDERNUM, EDU_WEBSITE_NAVIGATE.STATUS FROM EDU_WEBSITE_NAVIGATE WHERE EDU_WEBSITE_NAVIGATE.STATUS=0 ORDER BY EDU_WEBSITE_NAVIGATE.type,EDU_WEBSITE_NAVIGATE.ORDERNUM DESC 
+2017-08-06 16:45:59.055 DEBUG d.W.getWebNavigate - ==> Parameters: 
+2017-08-06 16:45:59.057 DEBUG d.W.getWebNavigate - <==      Total: 10
+2017-08-06 16:46:00.018 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:46:00.019 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:46:00.017(Timestamp)
+2017-08-06 16:46:00.020 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:46:00.021 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:46:00.023 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:46:00.02(Timestamp)
+2017-08-06 16:46:00.026 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:46:00.164 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:46:00.219 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:46:00.059(Timestamp)
+2017-08-06 16:46:00.454 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:46:00.457 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:46:00.624 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:46:00.456(Timestamp)
+2017-08-06 16:46:00.734 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:46:00.906 DEBUG dao.TeacherMapper.queryTeacherList - ==>  Preparing: SELECT EDU_TEACHER.ID, EDU_TEACHER.NAME, EDU_TEACHER.EDUCATION, EDU_TEACHER.CAREER, EDU_TEACHER.IS_STAR, EDU_TEACHER.PIC_PATH, EDU_TEACHER.STATUS, EDU_TEACHER.CREATE_TIME, EDU_TEACHER.UPDATE_TIME, EDU_TEACHER.SUBJECT_ID, EDU_TEACHER.SORT FROM EDU_TEACHER WHERE EDU_TEACHER.STATUS=0 ORDER BY EDU_TEACHER.SORT DESC LIMIT ? 
+2017-08-06 16:46:00.907 DEBUG dao.TeacherMapper.queryTeacherList - ==> Parameters: 4(Integer)
+2017-08-06 16:46:00.911 DEBUG dao.TeacherMapper.queryTeacherList - <==      Total: 4
+2017-08-06 16:46:00.913 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:46:00.914 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:46:00.921 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:46:03.659 DEBUG d.W.queryImagesByType - ==>  Preparing: SELECT EDU_WEBSITE_IMAGES.IMAGE_ID, EDU_WEBSITE_IMAGES.IMAGE_URL, EDU_WEBSITE_IMAGES.LINK_ADDRESS, EDU_WEBSITE_IMAGES.TITLE, EDU_WEBSITE_IMAGES.TYPE_ID, EDU_WEBSITE_IMAGES.SERIES_NUMBER, EDU_WEBSITE_IMAGES.PREVIEW_URL, EDU_WEBSITE_IMAGES.COLOR, EDU_WEBSITE_IMAGES.DESCRIBE FROM EDU_WEBSITE_IMAGES ORDER BY TYPE_ID 
+2017-08-06 16:46:03.660 DEBUG d.W.queryImagesByType - ==> Parameters: 
+2017-08-06 16:46:03.665 DEBUG d.W.queryImagesByType - <==      Total: 9
+2017-08-06 16:46:03.670 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:46:03.671 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: web(String)
+2017-08-06 16:46:03.674 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:46:03.689 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:46:03.690 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: logo(String)
+2017-08-06 16:46:03.691 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:46:03.693 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:46:03.693 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: censusCode(String)
+2017-08-06 16:46:03.694 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:46:03.696 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:46:03.696 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: online(String)
+2017-08-06 16:46:03.697 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:46:03.699 DEBUG d.W.getWebNavigate - ==>  Preparing: SELECT EDU_WEBSITE_NAVIGATE.ID, EDU_WEBSITE_NAVIGATE.NAME, EDU_WEBSITE_NAVIGATE.URL, EDU_WEBSITE_NAVIGATE.NEWPAGE, EDU_WEBSITE_NAVIGATE.TYPE, EDU_WEBSITE_NAVIGATE.ORDERNUM, EDU_WEBSITE_NAVIGATE.STATUS FROM EDU_WEBSITE_NAVIGATE WHERE EDU_WEBSITE_NAVIGATE.STATUS=0 ORDER BY EDU_WEBSITE_NAVIGATE.type,EDU_WEBSITE_NAVIGATE.ORDERNUM DESC 
+2017-08-06 16:46:03.700 DEBUG d.W.getWebNavigate - ==> Parameters: 
+2017-08-06 16:46:03.703 DEBUG d.W.getWebNavigate - <==      Total: 10
+2017-08-06 16:46:03.792 DEBUG d.C.queryRecommenCourseListByRecommendId - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID FROM EDU_WEBSITE_COURSE_DETAIL LEFT JOIN EDU_COURSE ON EDU_COURSE.COURSE_ID = EDU_WEBSITE_COURSE_DETAIL.COURSE_ID WHERE EDU_COURSE.IS_AVALIABLE=1 AND EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID=? AND EDU_COURSE.END_TIME>NOW() ORDER BY RAND() LIMIT ? 
+2017-08-06 16:46:03.794 DEBUG dao.CourseMapper.queryCourse - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.IS_AVALIABLE, EDU_COURSE.SUBJECT_ID, EDU_COURSE.SUBJECT_LINK, EDU_COURSE.ADD_TIME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.CONTEXT, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.UPDATE_TIME, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_COURSE.END_TIME, EDU_COURSE.LOSETYPE, EDU_COURSE.LOSE_TIME FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=? ORDER BY EDU_COURSE.PAGE_VIEWCOUNT DESC 
+2017-08-06 16:46:03.795 DEBUG dao.CourseMapper.queryCourse - ==> Parameters: 1(Integer)
+2017-08-06 16:46:03.795 DEBUG d.C.queryRecommenCourseListByRecommendId - ==> Parameters: 2(Long), 4(Long)
+2017-08-06 16:46:03.801 DEBUG d.C.getCourseStudyhistoryList - ==>  Preparing: select edu_course_studyhistory.ID, edu_course_studyhistory.USER_ID, edu_course_studyhistory.COURSE_ID, edu_course_studyhistory.KPOINT_iD, edu_course_studyhistory.PLAYERCOUNT, edu_course_studyhistory.COURSE_NAME, edu_course_studyhistory.KPOINT_NAME, edu_course_studyhistory.DATABACK, edu_course_studyhistory.UPDATE_TIME , edu_user.PIC_IMG AS picImg, ifnull(edu_User.SHOW_NAME,edu_user.EMAIL) AS showName from edu_course_studyhistory left join edu_course_kpoint on edu_course_kpoint.KPOINT_ID = edu_course_studyhistory.KPOINT_ID left join edu_user on edu_user.USER_ID = edu_course_studyhistory.USER_ID WHERE edu_course_kpoint.KPOINT_ID is not null and edu_course_kpoint.KPOINT_TYPE=1 ORDER by edu_course_studyhistory.UPDATE_TIME DESC limit ? 
+2017-08-06 16:46:03.830 DEBUG dao.CourseMapper.queryCourse - <==      Total: 14
+2017-08-06 16:46:03.837 DEBUG d.C.queryRecommenCourseListByRecommendId - <==      Total: 0
+2017-08-06 16:46:03.836 DEBUG d.C.getCourseStudyhistoryList - ==> Parameters: 4(Integer)
+2017-08-06 16:46:03.853 DEBUG d.C.getCourseStudyhistoryList - <==      Total: 4
+2017-08-06 16:46:10.604 DEBUG dao.TeacherMapper.queryTeacherList - ==>  Preparing: SELECT EDU_TEACHER.ID, EDU_TEACHER.NAME, EDU_TEACHER.EDUCATION, EDU_TEACHER.CAREER, EDU_TEACHER.IS_STAR, EDU_TEACHER.PIC_PATH, EDU_TEACHER.STATUS, EDU_TEACHER.CREATE_TIME, EDU_TEACHER.UPDATE_TIME, EDU_TEACHER.SUBJECT_ID, EDU_TEACHER.SORT FROM EDU_TEACHER WHERE EDU_TEACHER.STATUS=0 ORDER BY EDU_TEACHER.SORT DESC LIMIT ? 
+2017-08-06 16:46:10.605 DEBUG dao.TeacherMapper.queryTeacherList - ==> Parameters: 4(Integer)
+2017-08-06 16:46:10.609 DEBUG dao.TeacherMapper.queryTeacherList - <==      Total: 4
+2017-08-06 16:46:10.611 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:46:10.612 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:46:10.619 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:46:11.309 DEBUG dao.CourseMapper.queryCourse - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.IS_AVALIABLE, EDU_COURSE.SUBJECT_ID, EDU_COURSE.SUBJECT_LINK, EDU_COURSE.ADD_TIME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.CONTEXT, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.UPDATE_TIME, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_COURSE.END_TIME, EDU_COURSE.LOSETYPE, EDU_COURSE.LOSE_TIME FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=? ORDER BY EDU_COURSE.PAGE_VIEWCOUNT DESC 
+2017-08-06 16:46:11.310 DEBUG dao.CourseMapper.queryCourse - ==> Parameters: 1(Integer)
+2017-08-06 16:46:11.326 DEBUG dao.CourseMapper.queryCourse - <==      Total: 14
+2017-08-06 16:46:11.331 DEBUG d.C.queryRecommenCourseListByRecommendId - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID FROM EDU_WEBSITE_COURSE_DETAIL LEFT JOIN EDU_COURSE ON EDU_COURSE.COURSE_ID = EDU_WEBSITE_COURSE_DETAIL.COURSE_ID WHERE EDU_COURSE.IS_AVALIABLE=1 AND EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID=? AND EDU_COURSE.END_TIME>NOW() ORDER BY RAND() LIMIT ? 
+2017-08-06 16:46:11.332 DEBUG d.C.queryRecommenCourseListByRecommendId - ==> Parameters: 2(Long), 4(Long)
+2017-08-06 16:46:11.335 DEBUG d.C.queryRecommenCourseListByRecommendId - <==      Total: 0
+2017-08-06 16:46:12.467 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:46:12.469 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:46:12.506 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:46:56.369 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:46:56.370 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:46:56.375 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:46:56.908 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:46:56.908 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:46:56.914 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:46:57.283 DEBUG dao.CourseMapper.queryCourse - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.IS_AVALIABLE, EDU_COURSE.SUBJECT_ID, EDU_COURSE.SUBJECT_LINK, EDU_COURSE.ADD_TIME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.CONTEXT, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.UPDATE_TIME, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_COURSE.END_TIME, EDU_COURSE.LOSETYPE, EDU_COURSE.LOSE_TIME FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=? ORDER BY EDU_COURSE.PAGE_VIEWCOUNT DESC 
+2017-08-06 16:46:57.284 DEBUG dao.CourseMapper.queryCourse - ==> Parameters: 1(Integer)
+2017-08-06 16:46:57.291 DEBUG d.C.queryRecommenCourseListByRecommendId - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID FROM EDU_WEBSITE_COURSE_DETAIL LEFT JOIN EDU_COURSE ON EDU_COURSE.COURSE_ID = EDU_WEBSITE_COURSE_DETAIL.COURSE_ID WHERE EDU_COURSE.IS_AVALIABLE=1 AND EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID=? AND EDU_COURSE.END_TIME>NOW() ORDER BY RAND() LIMIT ? 
+2017-08-06 16:46:57.291 DEBUG d.C.queryRecommenCourseListByRecommendId - ==> Parameters: 2(Long), 4(Long)
+2017-08-06 16:46:57.295 DEBUG d.C.queryRecommenCourseListByRecommendId - <==      Total: 0
+2017-08-06 16:46:57.295 DEBUG dao.CourseMapper.queryCourse - <==      Total: 14
+2017-08-06 16:47:00.012 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:47:00.015 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:47:00.019 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:47:00.008(Timestamp)
+2017-08-06 16:47:00.020 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:47:00.009(Timestamp)
+2017-08-06 16:47:00.023 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:47:00.025 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:47:00.026 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:47:00.026 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:47:00.024(Timestamp)
+2017-08-06 16:47:00.027 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:47:00.029 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:47:00.027(Timestamp)
+2017-08-06 16:47:00.029 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:47:00.031 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:47:09.554 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:47:09.555 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:47:09.561 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:47:09.940 DEBUG dao.CourseMapper.queryCourse - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.IS_AVALIABLE, EDU_COURSE.SUBJECT_ID, EDU_COURSE.SUBJECT_LINK, EDU_COURSE.ADD_TIME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.CONTEXT, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.UPDATE_TIME, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_COURSE.END_TIME, EDU_COURSE.LOSETYPE, EDU_COURSE.LOSE_TIME FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=? ORDER BY EDU_COURSE.PAGE_VIEWCOUNT DESC 
+2017-08-06 16:47:09.941 DEBUG dao.CourseMapper.queryCourse - ==> Parameters: 1(Integer)
+2017-08-06 16:47:09.942 DEBUG d.C.queryRecommenCourseListByRecommendId - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID FROM EDU_WEBSITE_COURSE_DETAIL LEFT JOIN EDU_COURSE ON EDU_COURSE.COURSE_ID = EDU_WEBSITE_COURSE_DETAIL.COURSE_ID WHERE EDU_COURSE.IS_AVALIABLE=1 AND EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID=? AND EDU_COURSE.END_TIME>NOW() ORDER BY RAND() LIMIT ? 
+2017-08-06 16:47:09.942 DEBUG d.C.queryRecommenCourseListByRecommendId - ==> Parameters: 2(Long), 4(Long)
+2017-08-06 16:47:09.944 DEBUG d.C.queryRecommenCourseListByRecommendId - <==      Total: 0
+2017-08-06 16:47:09.952 DEBUG dao.CourseMapper.queryCourse - <==      Total: 14
+2017-08-06 16:47:10.353 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:47:10.354 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:47:10.359 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:47:10.600 DEBUG dao.CourseMapper.queryCourse - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.IS_AVALIABLE, EDU_COURSE.SUBJECT_ID, EDU_COURSE.SUBJECT_LINK, EDU_COURSE.ADD_TIME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.CONTEXT, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.UPDATE_TIME, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_COURSE.END_TIME, EDU_COURSE.LOSETYPE, EDU_COURSE.LOSE_TIME FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=? ORDER BY EDU_COURSE.PAGE_VIEWCOUNT DESC 
+2017-08-06 16:47:10.601 DEBUG dao.CourseMapper.queryCourse - ==> Parameters: 1(Integer)
+2017-08-06 16:47:10.602 DEBUG d.C.queryRecommenCourseListByRecommendId - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID FROM EDU_WEBSITE_COURSE_DETAIL LEFT JOIN EDU_COURSE ON EDU_COURSE.COURSE_ID = EDU_WEBSITE_COURSE_DETAIL.COURSE_ID WHERE EDU_COURSE.IS_AVALIABLE=1 AND EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID=? AND EDU_COURSE.END_TIME>NOW() ORDER BY RAND() LIMIT ? 
+2017-08-06 16:47:10.602 DEBUG d.C.queryRecommenCourseListByRecommendId - ==> Parameters: 2(Long), 4(Long)
+2017-08-06 16:47:10.604 DEBUG d.C.queryRecommenCourseListByRecommendId - <==      Total: 0
+2017-08-06 16:47:10.611 DEBUG dao.CourseMapper.queryCourse - <==      Total: 14
+2017-08-06 16:47:17.699 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:47:17.700 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:47:17.704 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:47:17.967 DEBUG dao.CourseMapper.queryCourse - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.IS_AVALIABLE, EDU_COURSE.SUBJECT_ID, EDU_COURSE.SUBJECT_LINK, EDU_COURSE.ADD_TIME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.CONTEXT, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.UPDATE_TIME, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_COURSE.END_TIME, EDU_COURSE.LOSETYPE, EDU_COURSE.LOSE_TIME FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=? ORDER BY EDU_COURSE.PAGE_VIEWCOUNT DESC 
+2017-08-06 16:47:17.968 DEBUG dao.CourseMapper.queryCourse - ==> Parameters: 1(Integer)
+2017-08-06 16:47:17.970 DEBUG d.C.queryRecommenCourseListByRecommendId - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID FROM EDU_WEBSITE_COURSE_DETAIL LEFT JOIN EDU_COURSE ON EDU_COURSE.COURSE_ID = EDU_WEBSITE_COURSE_DETAIL.COURSE_ID WHERE EDU_COURSE.IS_AVALIABLE=1 AND EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID=? AND EDU_COURSE.END_TIME>NOW() ORDER BY RAND() LIMIT ? 
+2017-08-06 16:47:17.970 DEBUG d.C.queryRecommenCourseListByRecommendId - ==> Parameters: 2(Long), 4(Long)
+2017-08-06 16:47:17.971 DEBUG d.C.queryRecommenCourseListByRecommendId - <==      Total: 0
+2017-08-06 16:47:17.979 DEBUG dao.CourseMapper.queryCourse - <==      Total: 14
+2017-08-06 16:48:00.004 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:48:00.005 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:48:00.002(Timestamp)
+2017-08-06 16:48:00.006 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:48:00.007 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:48:00.008 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:48:00.007(Timestamp)
+2017-08-06 16:48:00.011 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:50:06.669 WARN  n.s.e.config.ConfigurationFactory - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/personal/java/soft/maven-repository/net/sf/ehcache/ehcache/2.10.1/ehcache-2.10.1.jar!/ehcache-failsafe.xml
+2017-08-06 16:50:07.083 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2017-08-06 16:50:07.097 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-08-06 16:50:07.098 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2017-08-06 16:50:07.099 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2017-08-06 16:50:07.100 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-08-06 16:50:07.100 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-08-06 16:50:07.100 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2017-08-06 16:50:07.102 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4c63fba3
+2017-08-06 16:50:07.110 INFO  org.quartz.core.QuartzScheduler - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2017-08-06 16:50:16.552 DEBUG d.W.queryImagesByType - ==>  Preparing: SELECT EDU_WEBSITE_IMAGES.IMAGE_ID, EDU_WEBSITE_IMAGES.IMAGE_URL, EDU_WEBSITE_IMAGES.LINK_ADDRESS, EDU_WEBSITE_IMAGES.TITLE, EDU_WEBSITE_IMAGES.TYPE_ID, EDU_WEBSITE_IMAGES.SERIES_NUMBER, EDU_WEBSITE_IMAGES.PREVIEW_URL, EDU_WEBSITE_IMAGES.COLOR, EDU_WEBSITE_IMAGES.DESCRIBE FROM EDU_WEBSITE_IMAGES ORDER BY TYPE_ID 
+2017-08-06 16:50:16.580 DEBUG d.W.queryImagesByType - ==> Parameters: 
+2017-08-06 16:50:16.613 DEBUG d.W.queryImagesByType - <==      Total: 9
+2017-08-06 16:50:16.624 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:50:16.627 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: web(String)
+2017-08-06 16:50:16.630 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:50:16.657 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:50:16.658 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: logo(String)
+2017-08-06 16:50:16.659 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:50:16.661 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:50:16.661 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: censusCode(String)
+2017-08-06 16:50:16.663 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:50:16.665 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:50:16.666 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: online(String)
+2017-08-06 16:50:16.667 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:50:16.669 DEBUG d.W.getWebNavigate - ==>  Preparing: SELECT EDU_WEBSITE_NAVIGATE.ID, EDU_WEBSITE_NAVIGATE.NAME, EDU_WEBSITE_NAVIGATE.URL, EDU_WEBSITE_NAVIGATE.NEWPAGE, EDU_WEBSITE_NAVIGATE.TYPE, EDU_WEBSITE_NAVIGATE.ORDERNUM, EDU_WEBSITE_NAVIGATE.STATUS FROM EDU_WEBSITE_NAVIGATE WHERE EDU_WEBSITE_NAVIGATE.STATUS=0 ORDER BY EDU_WEBSITE_NAVIGATE.type,EDU_WEBSITE_NAVIGATE.ORDERNUM DESC 
+2017-08-06 16:50:16.670 DEBUG d.W.getWebNavigate - ==> Parameters: 
+2017-08-06 16:50:16.673 DEBUG d.W.getWebNavigate - <==      Total: 10
+2017-08-06 16:50:18.407 DEBUG dao.TeacherMapper.queryTeacherList - ==>  Preparing: SELECT EDU_TEACHER.ID, EDU_TEACHER.NAME, EDU_TEACHER.EDUCATION, EDU_TEACHER.CAREER, EDU_TEACHER.IS_STAR, EDU_TEACHER.PIC_PATH, EDU_TEACHER.STATUS, EDU_TEACHER.CREATE_TIME, EDU_TEACHER.UPDATE_TIME, EDU_TEACHER.SUBJECT_ID, EDU_TEACHER.SORT FROM EDU_TEACHER WHERE EDU_TEACHER.STATUS=0 ORDER BY EDU_TEACHER.SORT DESC LIMIT ? 
+2017-08-06 16:50:18.409 DEBUG dao.TeacherMapper.queryTeacherList - ==> Parameters: 4(Integer)
+2017-08-06 16:50:18.416 DEBUG dao.TeacherMapper.queryTeacherList - <==      Total: 4
+2017-08-06 16:50:18.418 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:50:18.419 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:50:18.426 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:50:19.277 DEBUG dao.CourseMapper.queryCourse - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.IS_AVALIABLE, EDU_COURSE.SUBJECT_ID, EDU_COURSE.SUBJECT_LINK, EDU_COURSE.ADD_TIME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.CONTEXT, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.UPDATE_TIME, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_COURSE.END_TIME, EDU_COURSE.LOSETYPE, EDU_COURSE.LOSE_TIME FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=? ORDER BY EDU_COURSE.PAGE_VIEWCOUNT DESC 
+2017-08-06 16:50:19.277 DEBUG dao.CourseMapper.queryCourse - ==> Parameters: 1(Integer)
+2017-08-06 16:50:19.285 DEBUG d.C.queryRecommenCourseListByRecommendId - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID FROM EDU_WEBSITE_COURSE_DETAIL LEFT JOIN EDU_COURSE ON EDU_COURSE.COURSE_ID = EDU_WEBSITE_COURSE_DETAIL.COURSE_ID WHERE EDU_COURSE.IS_AVALIABLE=1 AND EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID=? AND EDU_COURSE.END_TIME>NOW() ORDER BY RAND() LIMIT ? 
+2017-08-06 16:50:19.288 DEBUG d.C.queryRecommenCourseListByRecommendId - ==> Parameters: 2(Long), 4(Long)
+2017-08-06 16:50:19.289 DEBUG d.C.getCourseStudyhistoryList - ==>  Preparing: select edu_course_studyhistory.ID, edu_course_studyhistory.USER_ID, edu_course_studyhistory.COURSE_ID, edu_course_studyhistory.KPOINT_iD, edu_course_studyhistory.PLAYERCOUNT, edu_course_studyhistory.COURSE_NAME, edu_course_studyhistory.KPOINT_NAME, edu_course_studyhistory.DATABACK, edu_course_studyhistory.UPDATE_TIME , edu_user.PIC_IMG AS picImg, ifnull(edu_User.SHOW_NAME,edu_user.EMAIL) AS showName from edu_course_studyhistory left join edu_course_kpoint on edu_course_kpoint.KPOINT_ID = edu_course_studyhistory.KPOINT_ID left join edu_user on edu_user.USER_ID = edu_course_studyhistory.USER_ID WHERE edu_course_kpoint.KPOINT_ID is not null and edu_course_kpoint.KPOINT_TYPE=1 ORDER by edu_course_studyhistory.UPDATE_TIME DESC limit ? 
+2017-08-06 16:50:19.290 DEBUG d.C.queryRecommenCourseListByRecommendId - <==      Total: 0
+2017-08-06 16:50:19.291 DEBUG d.C.getCourseStudyhistoryList - ==> Parameters: 4(Integer)
+2017-08-06 16:50:19.292 DEBUG dao.CourseMapper.queryCourse - <==      Total: 14
+2017-08-06 16:50:19.298 DEBUG d.C.getCourseStudyhistoryList - <==      Total: 4
+2017-08-06 16:50:20.148 DEBUG d.C.queryWebCourseListPageCount - ==>  Preparing: SELECT COUNT(1) FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=? 
+2017-08-06 16:50:20.149 DEBUG d.C.queryWebCourseListPageCount - ==> Parameters: 1(Integer)
+2017-08-06 16:50:20.150 DEBUG d.C.queryWebCourseListPageCount - <==      Total: 1
+2017-08-06 16:50:20.152 DEBUG d.C.queryWebCourseListPage - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.IS_AVALIABLE, EDU_COURSE.SUBJECT_ID, EDU_COURSE.SUBJECT_LINK, EDU_COURSE.ADD_TIME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.CONTEXT, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.UPDATE_TIME, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_COURSE.END_TIME, EDU_COURSE.LOSETYPE, EDU_COURSE.LOSE_TIME FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=? limit ? ,? 
+2017-08-06 16:50:20.153 DEBUG d.C.queryWebCourseListPage - ==> Parameters: 1(Integer), 0(Integer), 12(Integer)
+2017-08-06 16:50:20.157 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.158 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 10(Integer)
+2017-08-06 16:50:20.163 DEBUG d.T.queryCourseTeacerList - <====      Total: 2
+2017-08-06 16:50:20.165 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.165 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 11(Integer)
+2017-08-06 16:50:20.167 DEBUG d.T.queryCourseTeacerList - <====      Total: 3
+2017-08-06 16:50:20.173 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.174 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 12(Integer)
+2017-08-06 16:50:20.177 DEBUG d.T.queryCourseTeacerList - <====      Total: 3
+2017-08-06 16:50:20.178 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.179 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 13(Integer)
+2017-08-06 16:50:20.181 DEBUG d.T.queryCourseTeacerList - <====      Total: 3
+2017-08-06 16:50:20.183 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.183 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 14(Integer)
+2017-08-06 16:50:20.185 DEBUG d.T.queryCourseTeacerList - <====      Total: 2
+2017-08-06 16:50:20.187 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.188 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 15(Integer)
+2017-08-06 16:50:20.189 DEBUG d.T.queryCourseTeacerList - <====      Total: 1
+2017-08-06 16:50:20.190 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.191 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 16(Integer)
+2017-08-06 16:50:20.193 DEBUG d.T.queryCourseTeacerList - <====      Total: 3
+2017-08-06 16:50:20.194 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.195 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 17(Integer)
+2017-08-06 16:50:20.197 DEBUG d.T.queryCourseTeacerList - <====      Total: 1
+2017-08-06 16:50:20.198 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.199 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 18(Integer)
+2017-08-06 16:50:20.200 DEBUG d.T.queryCourseTeacerList - <====      Total: 1
+2017-08-06 16:50:20.201 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.202 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 19(Integer)
+2017-08-06 16:50:20.204 DEBUG d.T.queryCourseTeacerList - <====      Total: 3
+2017-08-06 16:50:20.206 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.206 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 20(Integer)
+2017-08-06 16:50:20.208 DEBUG d.T.queryCourseTeacerList - <====      Total: 2
+2017-08-06 16:50:20.209 DEBUG d.T.queryCourseTeacerList - ====>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:20.210 DEBUG d.T.queryCourseTeacerList - ====> Parameters: 21(Integer)
+2017-08-06 16:50:20.211 DEBUG d.T.queryCourseTeacerList - <====      Total: 1
+2017-08-06 16:50:20.212 DEBUG d.C.queryWebCourseListPage - <==      Total: 12
+2017-08-06 16:50:20.215 DEBUG dao.SubjectMapper.getSubjectList - ==>  Preparing: SELECT SYS_SUBJECT.SUBJECT_ID, SYS_SUBJECT.SUBJECT_NAME, SYS_SUBJECT.STATUS, SYS_SUBJECT.CREATE_TIME, SYS_SUBJECT.PARENT_ID, SYS_SUBJECT.sort FROM SYS_SUBJECT WHERE SYS_SUBJECT.STATUS=0 AND SYS_SUBJECT.PARENT_ID = ? ORDER BY sort desc 
+2017-08-06 16:50:20.215 DEBUG dao.SubjectMapper.getSubjectList - ==> Parameters: 0(Integer)
+2017-08-06 16:50:20.219 DEBUG dao.SubjectMapper.getSubjectList - <==      Total: 6
+2017-08-06 16:50:20.220 DEBUG dao.TeacherMapper.queryTeacherList - ==>  Preparing: SELECT EDU_TEACHER.ID, EDU_TEACHER.NAME, EDU_TEACHER.EDUCATION, EDU_TEACHER.CAREER, EDU_TEACHER.IS_STAR, EDU_TEACHER.PIC_PATH, EDU_TEACHER.STATUS, EDU_TEACHER.CREATE_TIME, EDU_TEACHER.UPDATE_TIME, EDU_TEACHER.SUBJECT_ID, EDU_TEACHER.SORT FROM EDU_TEACHER WHERE EDU_TEACHER.STATUS=0 ORDER BY EDU_TEACHER.SORT DESC 
+2017-08-06 16:50:20.220 DEBUG dao.TeacherMapper.queryTeacherList - ==> Parameters: 
+2017-08-06 16:50:20.225 DEBUG dao.TeacherMapper.queryTeacherList - <==      Total: 10
+2017-08-06 16:50:24.618 DEBUG dao.CourseMapper.queryCourseById - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.IS_AVALIABLE, EDU_COURSE.SUBJECT_ID, EDU_COURSE.SUBJECT_LINK, EDU_COURSE.ADD_TIME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.CONTEXT, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.UPDATE_TIME, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_COURSE.END_TIME, EDU_COURSE.LOSETYPE, EDU_COURSE.LOSE_TIME FROM EDU_COURSE WHERE EDU_COURSE.COURSE_ID=? 
+2017-08-06 16:50:24.618 DEBUG dao.CourseMapper.queryCourseById - ==> Parameters: 11(Integer)
+2017-08-06 16:50:24.620 DEBUG dao.CourseMapper.queryCourseById - <==      Total: 1
+2017-08-06 16:50:24.622 DEBUG dao.CourseMapper.updateCourseCount - ==>  Preparing: update EDU_COURSE set PAGE_VIEWCOUNT = PAGE_VIEWCOUNT + 1 where COURSE_ID=? 
+2017-08-06 16:50:24.623 DEBUG dao.CourseMapper.updateCourseCount - ==> Parameters: 11(Integer)
+2017-08-06 16:50:24.624 DEBUG dao.CourseMapper.updateCourseCount - <==    Updates: 1
+2017-08-06 16:50:24.661 DEBUG d.T.queryCourseTeacerList - ==>  Preparing: SELECT EDU_TEACHER.ID as id, EDU_TEACHER.NAME as name, EDU_TEACHER.EDUCATION as education, EDU_TEACHER.PIC_PATH as picPath, EDU_TEACHER.CAREER as career FROM EDU_TEACHER LEFT JOIN EDU_COURSE_TEACHER ON EDU_COURSE_TEACHER.TEACHER_ID = EDU_TEACHER.ID WHERE EDU_COURSE_TEACHER.COURSE_ID=? 
+2017-08-06 16:50:24.661 DEBUG d.T.queryCourseTeacerList - ==> Parameters: 11(Integer)
+2017-08-06 16:50:24.663 DEBUG d.T.queryCourseTeacerList - <==      Total: 3
+2017-08-06 16:50:24.664 DEBUG d.C.queryInterfixCourseList - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID as courseId, EDU_COURSE.COURSE_NAME as courseName, EDU_COURSE.TITLE as title, EDU_COURSE.LOGO as logo, EDU_COURSE.PAGE_BUYCOUNT as pageBuycount FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=1 AND EDU_COURSE.END_TIME>NOW() AND EDU_COURSE.SUBJECT_LINK LIKE CONCAT('%,',?,',%') AND EDU_COURSE.COURSE_ID!=? LIMIT ? 
+2017-08-06 16:50:24.665 DEBUG d.C.queryInterfixCourseList - ==> Parameters: 213(Integer), 11(Integer), 5(Integer)
+2017-08-06 16:50:24.666 DEBUG d.C.queryInterfixCourseList - <==      Total: 0
+2017-08-06 16:50:24.667 DEBUG d.C.queryCourseKpointByCourseId - ==>  Preparing: SELECT EDU_COURSE_KPOINT.KPOINT_ID, EDU_COURSE_KPOINT.COURSE_ID, EDU_COURSE_KPOINT.NAME, EDU_COURSE_KPOINT.PARENT_ID, EDU_COURSE_KPOINT.ADD_TIME, EDU_COURSE_KPOINT.SORT, EDU_COURSE_KPOINT.PLAY_COUNT, EDU_COURSE_KPOINT.IS_FREE, EDU_COURSE_KPOINT.VIDEO_URL, EDU_COURSE_KPOINT.TEACHER_ID, EDU_COURSE_KPOINT.play_time, EDU_COURSE_KPOINT.KPOINT_TYPE, EDU_COURSE_KPOINT.VIDEO_TYPE, EDU_COURSE_KPOINT.FILE_TYPE, EDU_COURSE_KPOINT.CONTENT FROM EDU_COURSE_KPOINT WHERE EDU_COURSE_KPOINT.COURSE_ID=? ORDER BY EDU_COURSE_KPOINT.SORT DESC 
+2017-08-06 16:50:24.668 DEBUG d.C.queryCourseKpointByCourseId - ==> Parameters: 11(Integer)
+2017-08-06 16:50:24.670 DEBUG d.C.queryCourseKpointByCourseId - <==      Total: 1
+2017-08-06 16:50:25.512 DEBUG dao.CommentMapper.getCommentByPage - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.EMAIL email, edu_user.SHOW_NAME userName, edu_user.PIC_IMG picImg from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID WHERE edu_comment.type=? and edu_comment.OTHER_ID=? and edu_comment.P_COMMENT_ID=0 order by edu_comment.COMMENT_ID desc limit 0,6 
+2017-08-06 16:50:25.512 DEBUG dao.CommentMapper.getCommentByPage - ==> Parameters: 2(Integer), 11(Integer)
+2017-08-06 16:50:25.514 DEBUG dao.CommentMapper.getCommentByPage - <==      Total: 2
+2017-08-06 16:50:25.831 DEBUG d.C.getCourseStudyhistoryListByCouId - ==>  Preparing: select distinct(edu_course_studyhistory.USER_ID), edu_user.SHOW_NAME as userShowName,edu_user.EMAIL as userEmail,edu_user.PIC_IMG as userImg from edu_course_studyhistory left join edu_user on edu_user.USER_ID = edu_course_studyhistory.USER_ID where edu_course_studyhistory.COURSE_ID = ? order by edu_course_studyhistory.UPDATE_TIME desc limit 8 
+2017-08-06 16:50:25.831 DEBUG d.C.getCourseStudyhistoryListByCouId - ==> Parameters: 11(Long)
+2017-08-06 16:50:25.833 DEBUG d.C.getCourseStudyhistoryListByCouId - <==      Total: 1
+2017-08-06 16:50:25.834 DEBUG d.C.getCourseStudyhistoryCountByCouId - ==>  Preparing: select IFNULL(count(distinct(edu_course_studyhistory.USER_ID)),0) from edu_course_studyhistory where edu_course_studyhistory.COURSE_ID = ? 
+2017-08-06 16:50:25.835 DEBUG d.C.getCourseStudyhistoryCountByCouId - ==> Parameters: 11(Long)
+2017-08-06 16:50:25.836 DEBUG d.C.getCourseStudyhistoryCountByCouId - <==      Total: 1
+2017-08-06 16:51:00.019 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:51:00.021 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:51:00.018(Timestamp)
+2017-08-06 16:51:00.022 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:51:00.023 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:51:00.023 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:51:00.022(Timestamp)
+2017-08-06 16:51:00.024 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:51:58.524 WARN  n.s.e.config.ConfigurationFactory - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/personal/java/soft/maven-repository/net/sf/ehcache/ehcache/2.10.1/ehcache-2.10.1.jar!/ehcache-failsafe.xml
+2017-08-06 16:51:59.146 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2017-08-06 16:51:59.172 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-08-06 16:51:59.173 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2017-08-06 16:51:59.175 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2017-08-06 16:51:59.176 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-08-06 16:51:59.176 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-08-06 16:51:59.176 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2017-08-06 16:51:59.179 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@fffc622
+2017-08-06 16:51:59.191 INFO  org.quartz.core.QuartzScheduler - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2017-08-06 16:52:00.200 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:52:00.264 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:52:00.072(Timestamp)
+2017-08-06 16:52:00.294 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:52:00.299 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:52:00.300 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:52:00.299(Timestamp)
+2017-08-06 16:52:00.301 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:52:13.740 DEBUG d.W.queryImagesByType - ==>  Preparing: SELECT EDU_WEBSITE_IMAGES.IMAGE_ID, EDU_WEBSITE_IMAGES.IMAGE_URL, EDU_WEBSITE_IMAGES.LINK_ADDRESS, EDU_WEBSITE_IMAGES.TITLE, EDU_WEBSITE_IMAGES.TYPE_ID, EDU_WEBSITE_IMAGES.SERIES_NUMBER, EDU_WEBSITE_IMAGES.PREVIEW_URL, EDU_WEBSITE_IMAGES.COLOR, EDU_WEBSITE_IMAGES.DESCRIBE FROM EDU_WEBSITE_IMAGES ORDER BY TYPE_ID 
+2017-08-06 16:52:13.740 DEBUG d.W.queryImagesByType - ==> Parameters: 
+2017-08-06 16:52:13.746 DEBUG d.W.queryImagesByType - <==      Total: 9
+2017-08-06 16:52:13.752 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:52:13.753 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: web(String)
+2017-08-06 16:52:13.757 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:52:13.771 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:52:13.771 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: logo(String)
+2017-08-06 16:52:13.773 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:52:13.774 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:52:13.775 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: censusCode(String)
+2017-08-06 16:52:13.776 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:52:13.778 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:52:13.778 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: online(String)
+2017-08-06 16:52:13.779 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:52:13.780 DEBUG d.W.getWebNavigate - ==>  Preparing: SELECT EDU_WEBSITE_NAVIGATE.ID, EDU_WEBSITE_NAVIGATE.NAME, EDU_WEBSITE_NAVIGATE.URL, EDU_WEBSITE_NAVIGATE.NEWPAGE, EDU_WEBSITE_NAVIGATE.TYPE, EDU_WEBSITE_NAVIGATE.ORDERNUM, EDU_WEBSITE_NAVIGATE.STATUS FROM EDU_WEBSITE_NAVIGATE WHERE EDU_WEBSITE_NAVIGATE.STATUS=0 ORDER BY EDU_WEBSITE_NAVIGATE.type,EDU_WEBSITE_NAVIGATE.ORDERNUM DESC 
+2017-08-06 16:52:13.781 DEBUG d.W.getWebNavigate - ==> Parameters: 
+2017-08-06 16:52:13.784 DEBUG d.W.getWebNavigate - <==      Total: 10
+2017-08-06 16:52:15.527 DEBUG dao.TeacherMapper.queryTeacherList - ==>  Preparing: SELECT EDU_TEACHER.ID, EDU_TEACHER.NAME, EDU_TEACHER.EDUCATION, EDU_TEACHER.CAREER, EDU_TEACHER.IS_STAR, EDU_TEACHER.PIC_PATH, EDU_TEACHER.STATUS, EDU_TEACHER.CREATE_TIME, EDU_TEACHER.UPDATE_TIME, EDU_TEACHER.SUBJECT_ID, EDU_TEACHER.SORT FROM EDU_TEACHER WHERE EDU_TEACHER.STATUS=0 ORDER BY EDU_TEACHER.SORT DESC LIMIT ? 
+2017-08-06 16:52:15.528 DEBUG dao.TeacherMapper.queryTeacherList - ==> Parameters: 4(Integer)
+2017-08-06 16:52:15.531 DEBUG dao.TeacherMapper.queryTeacherList - <==      Total: 4
+2017-08-06 16:52:15.532 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:52:15.533 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:52:15.539 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:53:14.166 WARN  n.s.e.config.ConfigurationFactory - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/personal/java/soft/maven-repository/net/sf/ehcache/ehcache/2.10.1/ehcache-2.10.1.jar!/ehcache-failsafe.xml
+2017-08-06 16:53:14.693 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2017-08-06 16:53:14.734 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-08-06 16:53:14.736 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2017-08-06 16:53:14.738 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2017-08-06 16:53:14.740 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-08-06 16:53:14.741 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-08-06 16:53:14.741 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2017-08-06 16:53:14.744 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@748b57f0
+2017-08-06 16:53:14.756 INFO  org.quartz.core.QuartzScheduler - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2017-08-06 16:53:53.856 DEBUG d.W.queryImagesByType - ==>  Preparing: SELECT EDU_WEBSITE_IMAGES.IMAGE_ID, EDU_WEBSITE_IMAGES.IMAGE_URL, EDU_WEBSITE_IMAGES.LINK_ADDRESS, EDU_WEBSITE_IMAGES.TITLE, EDU_WEBSITE_IMAGES.TYPE_ID, EDU_WEBSITE_IMAGES.SERIES_NUMBER, EDU_WEBSITE_IMAGES.PREVIEW_URL, EDU_WEBSITE_IMAGES.COLOR, EDU_WEBSITE_IMAGES.DESCRIBE FROM EDU_WEBSITE_IMAGES ORDER BY TYPE_ID 
+2017-08-06 16:53:53.890 DEBUG d.W.queryImagesByType - ==> Parameters: 
+2017-08-06 16:53:53.929 DEBUG d.W.queryImagesByType - <==      Total: 9
+2017-08-06 16:53:53.938 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:53:53.945 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: web(String)
+2017-08-06 16:53:53.949 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:53:53.977 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:53:53.977 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: logo(String)
+2017-08-06 16:53:53.978 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:53:53.980 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:53:53.980 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: censusCode(String)
+2017-08-06 16:53:53.981 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:53:53.983 DEBUG d.W.getWebsiteProfileByType - ==>  Preparing: SELECT EDU_WEBSITE_PROFILE.ID, EDU_WEBSITE_PROFILE.TYPE, EDU_WEBSITE_PROFILE.DESCIPTION, EDU_WEBSITE_PROFILE.EXPLAIN FROM EDU_WEBSITE_PROFILE WHERE EDU_WEBSITE_PROFILE.TYPE = ? 
+2017-08-06 16:53:53.983 DEBUG d.W.getWebsiteProfileByType - ==> Parameters: online(String)
+2017-08-06 16:53:53.985 DEBUG d.W.getWebsiteProfileByType - <==      Total: 1
+2017-08-06 16:53:53.987 DEBUG d.W.getWebNavigate - ==>  Preparing: SELECT EDU_WEBSITE_NAVIGATE.ID, EDU_WEBSITE_NAVIGATE.NAME, EDU_WEBSITE_NAVIGATE.URL, EDU_WEBSITE_NAVIGATE.NEWPAGE, EDU_WEBSITE_NAVIGATE.TYPE, EDU_WEBSITE_NAVIGATE.ORDERNUM, EDU_WEBSITE_NAVIGATE.STATUS FROM EDU_WEBSITE_NAVIGATE WHERE EDU_WEBSITE_NAVIGATE.STATUS=0 ORDER BY EDU_WEBSITE_NAVIGATE.type,EDU_WEBSITE_NAVIGATE.ORDERNUM DESC 
+2017-08-06 16:53:53.987 DEBUG d.W.getWebNavigate - ==> Parameters: 
+2017-08-06 16:53:53.990 DEBUG d.W.getWebNavigate - <==      Total: 10
+2017-08-06 16:53:58.987 DEBUG dao.TeacherMapper.queryTeacherList - ==>  Preparing: SELECT EDU_TEACHER.ID, EDU_TEACHER.NAME, EDU_TEACHER.EDUCATION, EDU_TEACHER.CAREER, EDU_TEACHER.IS_STAR, EDU_TEACHER.PIC_PATH, EDU_TEACHER.STATUS, EDU_TEACHER.CREATE_TIME, EDU_TEACHER.UPDATE_TIME, EDU_TEACHER.SUBJECT_ID, EDU_TEACHER.SORT FROM EDU_TEACHER WHERE EDU_TEACHER.STATUS=0 ORDER BY EDU_TEACHER.SORT DESC LIMIT ? 
+2017-08-06 16:53:58.988 DEBUG dao.TeacherMapper.queryTeacherList - ==> Parameters: 4(Integer)
+2017-08-06 16:53:59.000 DEBUG dao.TeacherMapper.queryTeacherList - <==      Total: 4
+2017-08-06 16:53:59.002 DEBUG d.C.queryCommentInteraction - ==>  Preparing: select edu_comment.COMMENT_ID, edu_comment.USER_ID, edu_comment.P_COMMENT_ID, edu_comment.CONTENT, edu_comment.ADDTIME, edu_comment.OTHER_ID, edu_comment.PRAISE_COUNT, edu_comment.REPLY_COUNT, edu_comment.TYPE ,edu_user.SHOW_NAME showName ,edu_user.EMAIL email ,edu_user.PIC_IMG as picImg, edu_course.COURSE_NAME courseName, edu_course.COURSE_ID courseId from edu_comment left join edu_user on edu_comment.USER_ID=edu_user.USER_ID left join edu_course on edu_comment.OTHER_ID = edu_course.COURSE_ID WHERE edu_comment.TYPE = 2 order by edu_comment.PRAISE_COUNT desc limit ? 
+2017-08-06 16:53:59.003 DEBUG d.C.queryCommentInteraction - ==> Parameters: 10(Integer)
+2017-08-06 16:53:59.009 DEBUG d.C.queryCommentInteraction - <==      Total: 10
+2017-08-06 16:53:59.555 DEBUG dao.CourseMapper.queryCourse - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.IS_AVALIABLE, EDU_COURSE.SUBJECT_ID, EDU_COURSE.SUBJECT_LINK, EDU_COURSE.ADD_TIME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.CONTEXT, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.UPDATE_TIME, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_COURSE.END_TIME, EDU_COURSE.LOSETYPE, EDU_COURSE.LOSE_TIME FROM EDU_COURSE WHERE EDU_COURSE.IS_AVALIABLE=? ORDER BY EDU_COURSE.PAGE_VIEWCOUNT DESC 
+2017-08-06 16:53:59.556 DEBUG dao.CourseMapper.queryCourse - ==> Parameters: 1(Integer)
+2017-08-06 16:53:59.561 DEBUG d.C.queryRecommenCourseListByRecommendId - ==>  Preparing: SELECT EDU_COURSE.COURSE_ID, EDU_COURSE.COURSE_NAME, EDU_COURSE.SOURCE_PRICE, EDU_COURSE.CURRENT_PRICE, EDU_COURSE.TITLE, EDU_COURSE.LESSION_NUM, EDU_COURSE.LOGO, EDU_COURSE.PAGE_BUYCOUNT, EDU_COURSE.PAGE_VIEWCOUNT, EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID FROM EDU_WEBSITE_COURSE_DETAIL LEFT JOIN EDU_COURSE ON EDU_COURSE.COURSE_ID = EDU_WEBSITE_COURSE_DETAIL.COURSE_ID WHERE EDU_COURSE.IS_AVALIABLE=1 AND EDU_WEBSITE_COURSE_DETAIL.RECOMMEND_ID=? AND EDU_COURSE.END_TIME>NOW() ORDER BY RAND() LIMIT ? 
+2017-08-06 16:53:59.563 DEBUG d.C.getCourseStudyhistoryList - ==>  Preparing: select edu_course_studyhistory.ID, edu_course_studyhistory.USER_ID, edu_course_studyhistory.COURSE_ID, edu_course_studyhistory.KPOINT_iD, edu_course_studyhistory.PLAYERCOUNT, edu_course_studyhistory.COURSE_NAME, edu_course_studyhistory.KPOINT_NAME, edu_course_studyhistory.DATABACK, edu_course_studyhistory.UPDATE_TIME , edu_user.PIC_IMG AS picImg, ifnull(edu_User.SHOW_NAME,edu_user.EMAIL) AS showName from edu_course_studyhistory left join edu_course_kpoint on edu_course_kpoint.KPOINT_ID = edu_course_studyhistory.KPOINT_ID left join edu_user on edu_user.USER_ID = edu_course_studyhistory.USER_ID WHERE edu_course_kpoint.KPOINT_ID is not null and edu_course_kpoint.KPOINT_TYPE=1 ORDER by edu_course_studyhistory.UPDATE_TIME DESC limit ? 
+2017-08-06 16:53:59.564 DEBUG d.C.getCourseStudyhistoryList - ==> Parameters: 4(Integer)
+2017-08-06 16:53:59.566 DEBUG d.C.queryRecommenCourseListByRecommendId - ==> Parameters: 2(Long), 4(Long)
+2017-08-06 16:53:59.571 DEBUG d.C.getCourseStudyhistoryList - <==      Total: 4
+2017-08-06 16:53:59.571 DEBUG dao.CourseMapper.queryCourse - <==      Total: 14
+2017-08-06 16:53:59.580 DEBUG d.C.queryRecommenCourseListByRecommendId - <==      Total: 0
+2017-08-06 16:54:00.013 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:54:00.017 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:54:00.012(Timestamp)
+2017-08-06 16:54:00.020 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:54:00.021 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:54:00.022 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:54:00.021(Timestamp)
+2017-08-06 16:54:00.025 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:54:21.358 DEBUG dao.SysUserMapper.queryLoginUser - ==>  Preparing: SELECT SYS_USER.USER_ID, SYS_USER.LOGIN_NAME, SYS_USER.LOGIN_PWD, SYS_USER.USER_NAME, SYS_USER.STATUS, SYS_USER.LAST_LOGIN_TIME, SYS_USER.LAST_LOGIN_IP, SYS_USER.CREATE_TIME, SYS_USER.EMAIL, SYS_USER.TEL, SYS_USER.ROLE_ID FROM SYS_USER WHERE SYS_USER.LOGIN_NAME=? AND SYS_USER.LOGIN_PWD=? 
+2017-08-06 16:54:21.358 DEBUG dao.SysUserMapper.queryLoginUser - ==> Parameters: admin(String), 96e79218965eb72c92a549dd5a330112(String)
+2017-08-06 16:54:21.361 DEBUG dao.SysUserMapper.queryLoginUser - <==      Total: 1
+2017-08-06 16:54:21.365 DEBUG dao.SysUserMapper.updateUserLoginLog - ==>  Preparing: UPDATE SYS_USER SET SYS_USER.LAST_LOGIN_IP=? ,SYS_USER.LAST_LOGIN_TIME=? WHERE SYS_USER.USER_ID=? 
+2017-08-06 16:54:21.366 DEBUG dao.SysUserMapper.updateUserLoginLog - ==> Parameters: 192.168.31.84(String), 2017-08-06 16:54:21.363(Timestamp), 1(Integer)
+2017-08-06 16:54:21.367 DEBUG dao.SysUserMapper.updateUserLoginLog - <==    Updates: 1
+2017-08-06 16:54:21.381 DEBUG d.S.createLoginLog - ==>  Preparing: INSERT INTO SYS_LOGIN_LOG( SYS_LOGIN_LOG.LOG_ID, SYS_LOGIN_LOG.LOGIN_TIME, SYS_LOGIN_LOG.IP, SYS_LOGIN_LOG.USER_ID, SYS_LOGIN_LOG.OS_NAME, SYS_LOGIN_LOG.USER_AGENT ) VALUE( ?, ?, ?, ?, ?, ? ) 
+2017-08-06 16:54:21.382 DEBUG d.S.createLoginLog - ==> Parameters: 0(Integer), 2017-08-06 16:54:21.372(Timestamp), 192.168.31.84(String), 1(Integer), windows(String), chrome(String)
+2017-08-06 16:54:21.384 DEBUG d.S.createLoginLog - <==    Updates: 1
+2017-08-06 16:54:21.399 DEBUG d.S.queryAllSysFunction - ==>  Preparing: SELECT SYS_FUNCTION.FUNCTION_ID, SYS_FUNCTION.PARENT_ID, SYS_FUNCTION.FUNCTION_NAME, SYS_FUNCTION.FUNCTION_URL, SYS_FUNCTION.FUNCTION_TYPE, SYS_FUNCTION.CREATE_TIME, SYS_FUNCTION.SORT FROM SYS_FUNCTION ORDER BY SYS_FUNCTION.SORT DESC 
+2017-08-06 16:54:21.400 DEBUG d.S.queryAllSysFunction - ==> Parameters: 
+2017-08-06 16:54:21.421 DEBUG d.S.queryAllSysFunction - <==      Total: 91
+2017-08-06 16:54:21.424 DEBUG d.S.querySysUserFunction - ==>  Preparing: SELECT SYS_FUNCTION.FUNCTION_ID, SYS_FUNCTION.PARENT_ID, SYS_FUNCTION.FUNCTION_NAME, SYS_FUNCTION.FUNCTION_URL, SYS_FUNCTION.FUNCTION_TYPE, SYS_FUNCTION.CREATE_TIME, SYS_FUNCTION.SORT FROM SYS_FUNCTION LEFT JOIN SYS_ROLE_FUNCTION ON SYS_ROLE_FUNCTION.FUNCTION_ID = SYS_FUNCTION.FUNCTION_ID LEFT JOIN SYS_USER ON SYS_USER.ROLE_ID = SYS_ROLE_FUNCTION.ROLE_ID WHERE SYS_USER.USER_ID=? ORDER BY SYS_FUNCTION.SORT DESC 
+2017-08-06 16:54:21.425 DEBUG d.S.querySysUserFunction - ==> Parameters: 1(Integer)
+2017-08-06 16:54:21.444 DEBUG d.S.querySysUserFunction - <==      Total: 91
+2017-08-06 16:54:22.421 DEBUG d.S.statistics_loginNumToday - ==>  Preparing: select IfNULL(count(DISTINCT ul.user_id),0) from edu_user_login_log as ul WHERE DATE_FORMAT(ul.login_time,'%Y-%m-%d')=DATE_FORMAT(?,'%Y-%m-%d') 
+2017-08-06 16:54:22.422 DEBUG d.S.statistics_loginNumToday - ==> Parameters: 2017-08-06 16:54:22.421(Timestamp)
+2017-08-06 16:54:22.423 DEBUG d.S.statistics_loginNumToday - <==      Total: 1
+2017-08-06 16:54:22.425 DEBUG d.ArticleMapper.queryAllArticleCount - ==>  Preparing: SELECT COUNT(1) FROM EDU_ARTICLE 
+2017-08-06 16:54:22.425 DEBUG d.ArticleMapper.queryAllArticleCount - ==> Parameters: 
+2017-08-06 16:54:22.426 DEBUG d.ArticleMapper.queryAllArticleCount - <==      Total: 1
+2017-08-06 16:54:22.427 DEBUG dao.UserMapper.queryAllUserCount - ==>  Preparing: SELECT COUNT(1) FROM EDU_USER 
+2017-08-06 16:54:22.428 DEBUG dao.UserMapper.queryAllUserCount - ==> Parameters: 
+2017-08-06 16:54:22.429 DEBUG dao.UserMapper.queryAllUserCount - <==      Total: 1
+2017-08-06 16:54:22.430 DEBUG dao.CourseMapper.queryAllCourseCount - ==>  Preparing: SELECT COUNT(1) FROM EDU_COURSE 
+2017-08-06 16:54:22.430 DEBUG dao.CourseMapper.queryAllCourseCount - ==> Parameters: 
+2017-08-06 16:54:22.431 DEBUG dao.CourseMapper.queryAllCourseCount - <==      Total: 1
+2017-08-06 16:54:22.432 DEBUG d.Q.queryAllQuestionsCount - ==>  Preparing: select count(1) from edu_questions 
+2017-08-06 16:54:22.433 DEBUG d.Q.queryAllQuestionsCount - ==> Parameters: 
+2017-08-06 16:54:22.434 DEBUG d.Q.queryAllQuestionsCount - <==      Total: 1
+2017-08-06 16:54:23.055 DEBUG d.S.getStatisticThirty - ==>  Preparing: select edu_statistics_day.id, edu_statistics_day.statistics_time, edu_statistics_day.login_num, edu_statistics_day.create_time, edu_statistics_day.registered_num, edu_statistics_day.video_viewing_num, edu_statistics_day.daily_user_number, edu_statistics_day.daily_course_number from edu_statistics_day order by edu_statistics_day.statistics_time DESC limit 0,? 
+2017-08-06 16:54:23.055 DEBUG d.S.getStatisticThirty - ==> Parameters: 15(Integer)
+2017-08-06 16:54:23.060 DEBUG d.S.getStatisticThirty - <==      Total: 15
+2017-08-06 16:54:24.792 DEBUG d.S.queryAllSysFunction - ==>  Preparing: SELECT SYS_FUNCTION.FUNCTION_ID, SYS_FUNCTION.PARENT_ID, SYS_FUNCTION.FUNCTION_NAME, SYS_FUNCTION.FUNCTION_URL, SYS_FUNCTION.FUNCTION_TYPE, SYS_FUNCTION.CREATE_TIME, SYS_FUNCTION.SORT FROM SYS_FUNCTION ORDER BY SYS_FUNCTION.SORT DESC 
+2017-08-06 16:54:24.792 DEBUG d.S.queryAllSysFunction - ==> Parameters: 
+2017-08-06 16:54:24.815 DEBUG d.S.queryAllSysFunction - <==      Total: 91
+2017-08-06 16:54:25.933 DEBUG dao.SysRoleMapper.queryAllRoleList - ==>  Preparing: SELECT SYS_ROLE.ROLE_ID, SYS_ROLE.ROLE_NAME, SYS_ROLE.CREATE_TIME FROM SYS_ROLE 
+2017-08-06 16:54:25.934 DEBUG dao.SysRoleMapper.queryAllRoleList - ==> Parameters: 
+2017-08-06 16:54:25.936 DEBUG dao.SysRoleMapper.queryAllRoleList - <==      Total: 4
+2017-08-06 16:54:25.937 DEBUG d.S.queryAllSysFunction - ==>  Preparing: SELECT SYS_FUNCTION.FUNCTION_ID, SYS_FUNCTION.PARENT_ID, SYS_FUNCTION.FUNCTION_NAME, SYS_FUNCTION.FUNCTION_URL, SYS_FUNCTION.FUNCTION_TYPE, SYS_FUNCTION.CREATE_TIME, SYS_FUNCTION.SORT FROM SYS_FUNCTION ORDER BY SYS_FUNCTION.SORT DESC 
+2017-08-06 16:54:25.937 DEBUG d.S.queryAllSysFunction - ==> Parameters: 
+2017-08-06 16:54:25.953 DEBUG d.S.queryAllSysFunction - <==      Total: 91
+2017-08-06 16:54:32.606 DEBUG d.UserMapper.queryUserListPageCount - ==>  Preparing: SELECT COUNT(1) FROM EDU_USER 
+2017-08-06 16:54:32.607 DEBUG d.UserMapper.queryUserListPageCount - ==> Parameters: 
+2017-08-06 16:54:32.608 DEBUG d.UserMapper.queryUserListPageCount - <==      Total: 1
+2017-08-06 16:54:32.611 DEBUG dao.UserMapper.queryUserListPage - ==>  Preparing: SELECT EDU_USER.USER_ID, EDU_USER.MOBILE, EDU_USER.EMAIL, EDU_USER.PASSWORD, EDU_USER.USER_NAME, EDU_USER.SHOW_NAME, EDU_USER.SEX, EDU_USER.AGE, EDU_USER.CREATE_TIME, EDU_USER.IS_AVALIBLE, EDU_USER.PIC_IMG, EDU_USER.BANNER_URL, EDU_USER.MSG_NUM, EDU_USER.SYS_MSG_NUM, EDU_USER.LAST_SYSTEM_TIME FROM EDU_USER limit ? ,? 
+2017-08-06 16:54:32.612 DEBUG dao.UserMapper.queryUserListPage - ==> Parameters: 0(Integer), 15(Integer)
+2017-08-06 16:54:32.618 DEBUG dao.UserMapper.queryUserListPage - <==      Total: 15
+2017-08-06 16:54:36.984 DEBUG d.W.queryWebsiteCourseList - ==>  Preparing: SELECT EDU_WEBSITE_COURSE.ID, EDU_WEBSITE_COURSE.NAME, EDU_WEBSITE_COURSE.LINK, EDU_WEBSITE_COURSE.DESCRIPTION, EDU_WEBSITE_COURSE.COURSENUM FROM EDU_WEBSITE_COURSE 
+2017-08-06 16:54:36.984 DEBUG d.W.queryWebsiteCourseList - ==> Parameters: 
+2017-08-06 16:54:37.012 DEBUG d.W.queryWebsiteCourseList - <==      Total: 1
+2017-08-06 16:55:00.004 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:55:00.005 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:55:00.002(Timestamp)
+2017-08-06 16:55:00.007 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:55:00.007 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:55:00.008 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:55:00.007(Timestamp)
+2017-08-06 16:55:00.009 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:56:00.012 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:56:00.015 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:56:00.004(Timestamp)
+2017-08-06 16:56:00.017 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:56:00.018 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:56:00.019 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:56:00.017(Timestamp)
+2017-08-06 16:56:00.021 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:57:00.006 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:57:00.008 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:57:00.003(Timestamp)
+2017-08-06 16:57:00.010 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:57:00.010 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:57:00.011 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:57:00.01(Timestamp)
+2017-08-06 16:57:00.013 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
+2017-08-06 16:58:00.009 DEBUG d.U.queryUserEmailList - ==>  Preparing: select edu_emailsend_history.id, edu_emailsend_history.email, edu_emailsend_history.user_id, edu_emailsend_history.title, edu_emailsend_history.content, edu_emailsend_history.create_time, edu_emailsend_history.send_time, edu_emailsend_history.status, edu_emailsend_history.type , sys_user.login_name from edu_emailsend_history left join sys_user on edu_emailsend_history.user_id =sys_user.user_id WHERE edu_emailsend_history.type = ? and edu_emailsend_history.status = ? and edu_emailsend_history.send_time < ? 
+2017-08-06 16:58:00.013 DEBUG d.U.queryUserEmailList - ==> Parameters: 2(Integer), 2(Integer), 2017-08-06 16:58:00.005(Timestamp)
+2017-08-06 16:58:00.017 DEBUG d.U.queryUserEmailList - <==      Total: 0
+2017-08-06 16:58:00.019 DEBUG d.U.queryNowMobileMsgList - ==>  Preparing: select edu_mobilesend_history.id, edu_mobilesend_history.mobile, edu_mobilesend_history.user_id, edu_mobilesend_history.content, edu_mobilesend_history.create_time, edu_mobilesend_history.send_time, edu_mobilesend_history.status, edu_mobilesend_history.type from edu_mobilesend_history where edu_mobilesend_history.send_time <= ? and edu_mobilesend_history.status=2 and edu_mobilesend_history.type=2 
+2017-08-06 16:58:00.020 DEBUG d.U.queryNowMobileMsgList - ==> Parameters: 2017-08-06 16:58:00.018(Timestamp)
+2017-08-06 16:58:00.022 DEBUG d.U.queryNowMobileMsgList - <==      Total: 0
